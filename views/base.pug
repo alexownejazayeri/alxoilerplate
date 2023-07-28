@@ -1,0 +1,40 @@
+block variables
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    base(href="/")
+
+    title="TODO: insert dynamically based on page"
+
+    meta(name="description" contents="TODO: insert metadata description dynamically based on page")
+
+    link(rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png")
+    link(rel="manifest" href="/site.webmanifest")
+    link(rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff3a00")
+
+    link(href="main.css" rel="stylesheet")
+
+    meta(name="msapplication-TileColor" content="#fff")
+    meta(name="theme-color" content="#fff")
+
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="TODO: set content dynamically")
+    meta(property="og:description" content="TODO: set content dynamically")
+    meta(property="og:image" content="TODO: set content dynamically")
+
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content="TODO: set content dynamically")
+    meta(name="twitter:description" content="TODO: set content dynamically")
+    meta(name="twitter:image" content="TODO: set content dynamically")
+  body
+
+    .content#content(data-template=template)
+      block content
+
+    script(src="main.js")
